@@ -165,14 +165,14 @@ Vue.component('product', {
       {
         variantId: 2234,
         variantColor: 'green',
-        variantImage: '../img/greensock.jpg',
+        variantImage: '/img/greensock.jpg',
         variantQuantity: 10,
         saleItem: true
       },
       {
         variantId: 2235,
         variantColor: 'blue',
-        variantImage: '../img/bluesock.jpg',
+        variantImage: '/img/bluesock.jpg',
         variantQuantity: 0,
         saleItem: false
       }
