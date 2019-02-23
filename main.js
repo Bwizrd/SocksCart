@@ -1,4 +1,7 @@
+var github = false 
 var eventBus = new Vue()
+
+
 
 Vue.component('product-details', {
   props: {
@@ -166,6 +169,7 @@ Vue.component('product', {
         variantId: 2234,
         variantColor: 'green',
         variantImage: '/img/greensock.jpg',
+        variantImageGit: 'SocksCart/img/greensock.jpg',
         variantQuantity: 10,
         saleItem: true
       },
@@ -173,6 +177,7 @@ Vue.component('product', {
         variantId: 2235,
         variantColor: 'blue',
         variantImage: '/img/bluesock.jpg',
+        variantImageGit: 'SocksCart/img/greensock.jpg',
         variantQuantity: 0,
         saleItem: false
       }
@@ -203,7 +208,11 @@ Vue.component('product', {
             return  this.brand + ' ' + this.product + ' are not on sale'
         },
         image(){
+          if(!github){
             return this.variants[this.selectedVariant].variantImage
+          } else {
+            return this.variants[this.selectedVariant].variantImageGit
+          }
         },
         inStock(){
             return this.variants[this.selectedVariant].variantQuantity
