@@ -1,4 +1,4 @@
-var github = false 
+var github = true
 var eventBus = new Vue()
 
 
@@ -169,7 +169,7 @@ Vue.component('product', {
         variantId: 2234,
         variantColor: 'green',
         variantImage: '/img/greensock.jpg',
-        variantImageGit: 'SocksCart/img/greensock.jpg',
+        variantImageGit: 'img/greensock.jpg',
         variantQuantity: 10,
         saleItem: true
       },
@@ -177,7 +177,7 @@ Vue.component('product', {
         variantId: 2235,
         variantColor: 'blue',
         variantImage: '/img/bluesock.jpg',
-        variantImageGit: 'SocksCart/img/greensock.jpg',
+        variantImageGit: 'img/greensock.jpg',
         variantQuantity: 0,
         saleItem: false
       }
