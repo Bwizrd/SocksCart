@@ -177,7 +177,7 @@ Vue.component('product', {
         variantId: 2235,
         variantColor: 'blue',
         variantImage: '/img/bluesock.jpg',
-        variantImageGit: 'img/greensock.jpg',
+        variantImageGit: 'img/bluesock.jpg',
         variantQuantity: 0,
         saleItem: false
       }
